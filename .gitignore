@@ -1,0 +1,92 @@
+###########################################
+# Terraform
+###########################################
+
+# Local state
+terraform.tfstate
+terraform.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Terraform working directory
+.terraform/
+.terraform.lock.hcl
+
+# Plan files (esp. sensitive)
+*.tfplan
+*.plan
+*.tfplan.*
+
+# Override files
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config (sometimes created locally)
+.terraformrc
+terraform.rc
+
+
+###########################################
+# Ansible
+###########################################
+
+# Inventory files containing hosts/ips
+inventory
+inventory.ini
+
+# Ansible retries
+*.retry
+
+# Vault password files
+.vault_pass
+vault_pass.txt
+
+# Local dynamic inventory outputs
+*inventory.yml
+
+
+###########################################
+# Docker
+###########################################
+
+# Docker compose artifacts
+*.env
+.env.*
+
+# Build output
+docker-build/
+docker-output/
+docker-compose.override.yml
+
+
+###########################################
+# OS / Editor / Misc junk
+###########################################
+
+# macOS
+.DS_Store
+
+# Linux temp
+*~
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+
+# PyCharm / JetBrains
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+logs/
